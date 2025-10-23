@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalGate - Explore the world, travel with confidence</title>
+    <meta name="description" content="Fast booking, global network, local expertise. Book your domestic and international flights with GlobalGate.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globalgate.com/">
+    <meta property="og:title" content="GlobalGate - Explore the world, travel with confidence">
+    <meta property="og:description" content="Fast booking, global network, local expertise. Book your domestic and international flights with GlobalGate.">
+    <meta property="og:image" content="https://globalgate.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://globalgate.com/">
+    <meta property="twitter:title" content="GlobalGate - Explore the world, travel with confidence">
+    <meta property="twitter:description" content="Fast booking, global network, local expertise. Book your domestic and international flights with GlobalGate.">
+    <meta property="twitter:image" content="https://globalgate.com/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Motion Background -->
+    <div class="motion-background" id="motionBackground">
+        <div class="gradient-layer"></div>
+        <div class="particle-layer">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span id="siteName">GlobalGate</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link" data-translate="nav.home">Home</a>
+                <a href="#about" class="nav-link" data-translate="nav.about">About</a>
+                <a href="#domestic" class="nav-link" data-translate="nav.domestic">Domestic</a>
+                <a href="#international" class="nav-link" data-translate="nav.international">International</a>
+                <a href="#visas" class="nav-link" data-translate="nav.visas">Visas</a>
+            </div>
+
+            <div class="nav-controls">
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ku">کو</button>
+                    <button class="lang-btn" data-lang="ar">ع</button>
+                </div>
+
+               
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="My most beautiful drone shot – Cinematic FPV on an empty beach.mp4" type="video/mp4">
+        </video>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" id="heroTitle">Explore the world — travel with confidence.</h1>
+                <p class="hero-subtitle" id="heroSubtitle">Fast booking, global network, local expertise.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="primaryCTA">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title" data-translate="nav.about">About</h2>
+                <p class="about-text" id="aboutText">GlobalGate connects travelers to the world's best routes and experiences. We combine local knowledge with a global platform to offer secure, seamless travel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domestic Tickets Section -->
+    <section class="tickets-section" id="domestic">
+        <div class="container">
+            <h2 class="section-title" id="domesticTitle">Domestic Tickets</h2>
+            <div class="tickets-grid" id="domesticTickets">
+                <!-- Tickets will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- International Tickets Section -->
+    <section class="tickets-section" id="international">
+        <div class="container">
+            <h2 class="section-title" id="internationalTitle">International Tickets</h2>
+            <div class="tickets-grid" id="internationalTickets">
+                <!-- Tickets will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Visas Section -->
+    <section class="tickets-section" id="visas">
+        <div class="container">
+            <h2 class="section-title" id="visasTitle" data-translate="section.visas">Visas</h2>
+            <div class="continent-filters" id="continentFilters" style="margin-bottom: 1rem; display: flex; gap: .5rem; flex-wrap: wrap;">
+                <button class="btn continent-btn" data-continent="all">All Visas</button>
+                <button class="btn continent-btn active" data-continent="asia">Asia</button>
+                <button class="btn continent-btn" data-continent="europe">Europe</button>
+                <button class="btn continent-btn" data-continent="africa">Africa</button>
+                <button class="btn continent-btn" data-continent="north_america">North America</button>
+                <button class="btn continent-btn" data-continent="south_america">South America</button>
+                <button class="btn continent-btn" data-continent="oceania">Oceania</button>
+                <button class="btn continent-btn" data-continent="antarctica">Antarctica</button>
+            </div>
+            <div class="tickets-grid" id="visasGrid">
+                <!-- Visas will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" id="contactTitle">Contact our offices</h2>
+            
+            <div class="contact-content">
+                <div class="contact-links">
+                    <a class="office-card contact-link-card" href="mailto:info@example.com">
+                        <div class="office-city">Email</div>
+                        <div class="office-phone">info@example.com</div>
+                    </a>
+                    <a class="office-card contact-link-card" href="#" target="_blank" rel="noopener">
+                        <div class="office-city">Instagram</div>
+                        <div class="office-phone">@your_instagram</div>
+                    </a>
+                    <a class="office-card contact-link-card" href="#" target="_blank" rel="noopener">
+                        <div class="office-city">Facebook</div>
+                        <div class="office-phone">your-facebook-page</div>
+                    </a>
+                    <a class="office-card contact-link-card" href="tel:+9647500000000">
+                        <div class="office-city">Mobile</div>
+                        <div class="office-phone">+964 750 000 0000</div>
+                    </a>
+                    <a class="office-card contact-link-card" href="https://wa.me/9647500000000" target="_blank" rel="noopener">
+                        <div class="office-city">WhatsApp</div>
+                        <div class="office-phone">+964 750 000 0000</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+   
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
